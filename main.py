@@ -8,13 +8,6 @@ import math
 ########################
 
 
-class Sinh(FuncOp):
-    """Class for sinh function -- sinh(...)
-
-    Extends:
-        FuncOp
-    """
-
     def __init__(self):
         super().__init__()
         self.value = 'sinh'
@@ -31,15 +24,6 @@ class Sinh(FuncOp):
         self.__class__ = Cosh
 
     def calculate(self, val):
-        return self.coefficient * ((math.sinh(val))**self.power)
-
-
-class Cosh(FuncOp):
-    """Class for cosh function -- cosh(...)
-
-    Extends:
-        FuncOp
-    """
 
     def __init__(self):
         super().__init__()
@@ -100,3 +84,4 @@ class ArcCosh(FuncOp):
 
 class ArcTanh(FuncOp):
     pass
+
